@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 50px; */
+}
+
+.conatiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    
+    /* width: 300px; */
+    padding: 50px;
+}
+
+h2{
+    padding: 5px;
+    color: brown;
+    font-size: 4rem;
+}
+
+.buttons{
+    margin-top: 20px;
+}
+
+button{
+    padding: 5px;
+    margin: 10px;
+}
+
+.refresh{
+    transition: all 0.3s;
+}
+
+.refresh:hover{
+    color: white;
+    background-color: rgb(195, 16, 16);
+    border-radius: 3px;
+}
+.load_Data{
+    transition: all 0.3s;
+}
+
+.load_Data:hover{
+    color: white;
+    background-color: rgb(23, 23, 138);
+    border-radius: 3px;
+}
+
+/* #image_container{
+    height: 100px;
+    width: 200px;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    
+} */
+
+.image_container{
+    padding: 10px;
+    /* width: 300%; */
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    /* border: 2px solid ; */
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgb(241, 238, 233);
+}
+
+.container1{
+    margin-top: 3rem;
+}
+
+.container2{
+    margin-top: 2rem;
+}
+
+.image{
+    height: 200px;
+    width: 200px;
+    /* border: 2px solid ; */
+    border-radius: 20px;
+    /* box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3) */
+    transition: all 0.3s;
+}
+
+.image:hover{
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 2px;
+}
+
+/* <----------- Random image using source ------> */
+.image1{
+    margin-right: 3rem;
+    background: url(https:/source.unsplash.com/random/900x600)  
+    no-repeat center
+    center/cover;   
+}
+
+/* <----------- Random image from specific user ----> */
+.image2{
+    margin-right: 3rem;
+    background: url(https:/source.unsplash.com/user/josh/900x600)
+    no-repeat center
+    center/cover;
+}
+
+/* <----------- Random image from collection ---------> */
+.image3{
+    margin-right: 3rem;
+    background: url(https:/source.unsplash.com/collection/190727/900x600)
+    no-repeat center
+    center/cover;
+}
+
+/* <--------- image will change once in every day ----> */
+.image4{
+    background: url(https:/source.unsplash.com/daily?family)
+    no-repeat center
+    center/cover;
+}
+
+/* <------ image will change once in every week ----> */
+.image5{
+    margin-right: 3rem;
+    background: url(https:/source.unsplash.com/weekly?indian,home)
+    no-repeat center
+    center/cover;
+}
+
+/* <------ Random Search image ----------> */
+.image6{
+    margin-right: 3rem;
+    background: url(https:/source.unsplash.com/1000x900/?nature,street)
+    no-repeat center
+    center/cover;
+}
+
+.image7{
+    background: url(https:/source.unsplash.com/1000x900/?monuments)
+    no-repeat center
+    center/cover;
+}
+
+
+
+
